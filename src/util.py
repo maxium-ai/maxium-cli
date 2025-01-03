@@ -72,3 +72,12 @@ def get_line_changes():
         return total_additions + total_deletions
     except:
         return 0
+    
+
+def remote_branch_exists(branch_name: str) -> bool:
+    """Check if branch exists on remote"""
+    try:
+        run_git_command(['git', 'ls-remote', '--heads', 'origin', branch_name])
+        return True
+    except click.Abort:
+        return False
