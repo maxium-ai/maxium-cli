@@ -7,7 +7,7 @@ A Git-native CLI tool that simplifies Git workflows and helps manage feature bra
 Install directly from GitHub using SSH:
 
 ```bash
-pip install git+ssh://git@github.com/maxium-ai/maxium-cli.git@latest
+pip install git+ssh://git@github.com/maxium-ai/maxium-cli.git@master
 ```
 
 ## Features
